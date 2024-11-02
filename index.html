@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bookstore Catalog</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-banner">
+          <div class="banner-text">
+            <h1>Welcome to Our Bookstore Catalog</h1>
+            <p>Discover a world of stories and knowledge. Find your next favorite book!</p>
+          </div>
+          <div class="banner-image-container">
+            <img id="banner-image" src="/img/book1.jpg" alt="Bookstore banner image" class="banner-image" />
+          </div>
+        </div><br>
+        
+        <div class="header-content">
+          <div class="search-filter-container">
+            <div class="search-container">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Search by title or author..."
+              />
+              <i class="bx bx-search search-icon"></i>
+            </div>
+            <select class="genre-filter">
+              <option value="">All Genres</option>
+            </select>
+          </div>
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <i class="bx bx-moon"></i>
+          </button>
+        </div>
+      </header>
+
+      <main class="book-grid">
+        <div class="loading">Loading books...</div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
